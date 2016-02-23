@@ -1,0 +1,957 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body, html{
+  font-family: 'Lato', sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: #5a5a5a;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+#map_home {
+  @media screen {
+    @media (min-width: 100px)
+    and (max-width: 768px) {
+      height: 600px;
+      opacity: 0.9;
+    }
+  }
+  height: 800px;
+  opacity: 0.9;
+}
+
+
+#GoogleMaps-Content-Title {
+  margin: 4px;
+  width: 160px;
+  color: black;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+}
+
+.section-title hr{
+  border-color: #fcac45;
+  border-width: 4px;
+  width: 60px;
+  float: left;
+  clear: both;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+ul, ol{
+  padding: 0;
+  webkit-padding: 0;
+  moz-padding: 0;
+}
+
+
+/* Home Style */
+#tf-home {
+  background: url("Home-Images/05-min-min.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #cfcfcf;
+}
+
+        /* Home Style For Profile Page */
+        #tf-home-profile {
+          background: url("Profile-Background.jpg");
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          color: #cfcfcf;
+        }
+
+#tf-home .overlay{
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+  height: 750px;
+  background-attachment: fixed;
+}
+
+        /* For Profile Page */
+        #tf-home-profile .overlay{
+          background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+          background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+          background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+          height: 550px;
+          background-attachment: fixed;
+        }
+
+#tf-home p.lead{
+  color: #e3e3e3;
+}
+
+.content{
+  position: relative;
+  padding: 20% 0 0;
+}
+
+        .content-profile {
+          @media screen {
+            @media (min-width: 100px)
+            and (max-width: 768px) {
+              position: relative;
+              padding: 40% 0 0;
+            }
+            @media (min-width: 769px)
+            and (max-width: 960px) {
+              position: relative;
+              padding: 30% 0 0;
+            }
+          }
+          position: relative;
+          padding: 10% 0 0;
+        }
+
+.color{
+  color: #fcac45;
+}
+
+/** FOR CUSTOM SEMANTIC UI **/
+
+.ui.inverted.orange.button, .ui.inverted.orange.buttons .button {
+  margin-bottom: 3%;
+}
+
+.ui.inverted.green.button, .ui.inverted.green.buttons .button {
+  margin-bottom: 3%;
+}
+
+/** FOR CUSTOM BOOTSTRAP **/
+
+.form-control {
+  height: 40px;
+  font-size: 16px;
+  border: 1.5px solid #ccc;
+}
+
+
+/** MAIN PAGE (Homepage) CSS **/
+
+#Home-Container {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#Home-Icon-col-md-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#Home-Icon-4 {
+  padding-left: 0;
+  padding-right: 0;
+  height: 330px;
+}
+
+#Home-Icon-Div {
+  padding: 80px;
+  text-align: center;
+  display: block;
+  height: 330px;
+  font-size: 16px;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  color: #575a5b;
+  font-weight: 300;
+  cursor: default;
+}
+
+#Home-Icon-Div:hover {
+  padding: 80px;
+  text-align: center;
+  background-color: #000;
+  display: block;
+  height: 330px;
+  -webkit-transition: 0.9s;
+  -moz-transition: 0.9s;
+  -ms-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  color: white;
+  font-weight: 300;
+}
+
+
+/** EDIT PROFILE CONTENT **/
+
+.col-lg-12.padding {
+  padding-top: 2%;
+}
+
+#Create-Edit-Container {
+  padding-top: 20px;
+}
+
+
+/** PROFILE DASHBOARD CONTENT **/
+
+/*** FOR PROFILE IMAGE ***/
+
+#Profile-image {
+  border: 3px solid white;
+}
+
+img {
+  max-width: 100%;
+}
+
+.gallery_image {
+  margin-bottom: 1em;
+}
+
+.card-info {
+  padding-top: 2%;
+  font-size: 18px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.img-wrap {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+}
+
+.img-wrap .close {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  z-index: 100;
+  background-color: #FFF;
+  padding: 5px 2px 2px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: .5;
+  text-align: center;
+  font-size: 22px;
+  line-height: 10px;
+  border-radius: 50%;
+}
+.img-wrap:hover .close {
+  opacity: 1;
+}
+
+.btn-pref .btn {
+  -webkit-border-radius:0 !important;
+}
+
+#description-text {
+  color: black;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+#Profile-Description {
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  color: #575a5b;
+  font-weight: 400;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.profile-content {
+  padding: 1.5%;
+  border-radius: .28571429rem;
+  box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5;
+  margin: .875em .5em;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 1.5em;
+}
+
+#Profile-Statuses-media {
+  padding: 4px;
+  box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 0px #D4D4D5;
+  -webkit-border-radius: .28571429rem;
+  -moz-border-radius: .28571429rem;
+  border-radius: .28571429rem;
+}
+
+#badges-container {
+  @media screen {
+    @media (min-width: 100px)
+    and (max-width: 768px) {
+      padding-bottom: 20px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @media (min-width: 769px)
+    and (max-width: 960px) {
+      padding-bottom: 20px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#Points-Badges {
+  padding-top: 46px;
+  padding-bottom: 15px;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  color: #575a5b;
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: center;
+}
+
+#Travel-Badges {
+  margin-top: 46px;
+  padding-bottom: 15px;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  color: #575a5b;
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: center;
+}
+
+#badges-description {
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  color: #575a5b;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 55px;
+  font-size: 12px;
+}
+
+#Badge {
+  margin-left: 10%;
+}
+
+#Badge:hover {
+  opacity: 0.7;
+}
+
+
+
+
+/** LOGIN & REGISTER CSS **/
+
+#Login-Register-Container {
+  padding-top: 10%;
+  padding-bottom: 25%;
+}
+
+#Login-Register-Panel {
+  opacity: 0.8;
+}
+
+
+/** YOUR FLYERS PAGE IN PROFILE CSS **/
+
+#Your-Travel-Flyers-Container {
+  padding-bottom: 15%;
+}
+
+#Your-Profile-md-4-Grid {
+  @media screen {
+    @media (min-width: 100px)
+    and (max-width: 500px) {
+      padding-bottom: 6%;
+    }
+    @media (min-width: 501px)
+    and (max-width: 768px) {
+      padding-bottom: 6%;
+      padding-right: 25%;
+      padding-left: 25%;
+    }
+  }
+  padding-bottom: 3%;
+}
+
+#Your-Profile-card {
+  @media screen {
+    @media (min-width: 100px)
+    and (max-width: 768px) {
+      height: 325px;
+    }
+  }
+  height: 275px;
+}
+
+
+/** SHOW TRAVEL FLYERS PAGE **/
+
+#FlyerBannerFormUpload {
+  padding: 3%;
+}
+
+#Banner-image {
+  border: 6px solid whitesmoke;
+}
+
+.img-wrap-flyer {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  width: 100%;
+}
+
+.img-wrap-flyer .close {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  z-index: 100;
+  background-color: #FFF;
+  padding: 5px 2px 2px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: .5;
+  text-align: center;
+  font-size: 22px;
+  line-height: 10px;
+  border-radius: 50%;
+}
+.img-wrap-flyer:hover .close {
+  opacity: 1;
+}
+
+#Flyer-Username {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+#Flyer-Username:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+#Flyer-Title {
+  padding-top: 5%;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#Flyer-Description {
+  padding: 1.5%;
+  line-height: 1.5em;
+  opacity: 0.9;
+  margin-bottom: 5%;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+#Flyer-Sub-Description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+
+#map {
+  height: 500px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+
+/** SHOW TRAVEL FLYERS INDEX PAGE **/
+
+#Flyers-ShowAll-Container {
+  padding-top: 5%;
+}
+
+#Travel-Flyer-Display-Cards {
+  height: 330px;
+  margin-bottom: 4%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+#Flyer-Card {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+#Flyer-Username-Index-Page {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+#Flyer-Username-Index-Page:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+input[type=text] {
+  padding: 8px;
+}
+
+
+/** SEARCH BOX CSS **/
+
+.typeahead-container {
+  padding-bottom: 10px;
+}
+
+#country_v1-query {
+  height: 36px;
+}
+
+#Search-Button {
+  margin-left: 3%;
+  height: 36px;
+}
+
+#Flyers-Search-Jumbotron {
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+#Flyers-Search-Fluid-Container {
+  padding: 10px;
+  margin-top: -5px;
+  background-color: #428bca;
+}
+
+
+/** FOR PUBLIC PROFILE CSS **/
+
+/**-- FOR BOOTSTRAP DROP-DOWN FOR BADGES --**/
+.panel-group .panel {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.panel-title {
+  font-weight: 400;
+}
+
+.panel-title > a:hover {
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+}
+
+/** --------------------------- **/
+
+#Public-Profile-Badges-Container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#Public-Badge {
+  margin-left: 25%;
+}
+
+#Public-Badge-SignedUp {
+  margin-left: 25%;
+}
+
+#Public-Profile-Main-Container {
+  background-color: rgba(214, 224, 226, 0.2);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#Public-Profile-Users-Flyers-Container {
+  padding-top: 2%;
+}
+
+#Public-Profile-Header {
+  text-transform: uppercase;
+}
+
+#card-center {
+  padding-left: 4%;
+}
+
+#Public-Flyer-Person-Description {
+  width:50%;
+  margin-left: 25%;
+  text-align: center;
+}
+
+#Public-ui-comments {
+  margin: 0;
+}
+
+#Public-media {
+  padding-top: 2%;
+  padding-left: 7%;
+}
+
+#Public-reply-form {
+  padding-left: 7%;
+  padding-right: 2%;
+  padding-bottom: 3%;
+}
+
+#Public-media-body {
+  padding-left: 4%;
+}
+
+.card .card-heading {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.card .card-heading.simple {
+  font-size: 20px;
+  font-weight: 300;
+  color: #777;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.card .card-heading.image img {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  margin-right: 15px;
+  vertical-align: top;
+  border: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.card .card-heading.image .card-heading-header {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card .card-heading.image .card-heading-header h3 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  color: #262626;
+}
+
+.card .card-heading.image .card-heading-header span {
+  font-size: 12px;
+  color: #999999;
+}
+
+.card .card-body {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.card .card-media {
+  padding: 0 20px;
+  margin: 0 -14px;
+}
+
+.card .card-media img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card .card-actions {
+  min-height: 30px;
+  padding: 0 20px 20px 20px;
+  margin: 20px 0 0 0;
+}
+
+.card .card-comments {
+  padding: 20px;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+.card .card-comments .comments-collapse-toggle {
+  padding: 0;
+  margin: 0 20px 12px 20px;
+}
+
+.card .card-comments .comments-collapse-toggle a,
+.card .card-comments .comments-collapse-toggle span {
+  padding-right: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #999;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-comments .media-heading {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.card.people {
+  position: relative;
+  display: inline-block;
+  width: 170px;
+  height: 300px;
+  padding-top: 0;
+  margin-left: 20px;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.card.people:first-child {
+  margin-left: 0;
+}
+
+.card.people .card-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 170px;
+  height: 150px;
+  background-color: #ffffff;
+}
+
+.card.people .card-top.green {
+  background-color: #53a93f;
+}
+
+.card.people .card-top.blue {
+  background-color: #427fed;
+}
+
+.card.people .card-info {
+  position: absolute;
+  top: 150px;
+  display: inline-block;
+  width: 100%;
+  height: 101px;
+  overflow: hidden;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.card.people .card-info .title {
+  display: block;
+  margin: 8px 14px 0 14px;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #404040;
+}
+
+.card.people .card-info .desc {
+  display: block;
+  margin: 8px 14px 0 14px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 16px;
+  color: #737373;
+  text-overflow: ellipsis;
+}
+
+.card.people .card-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+  line-height: 29px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.card.hovercard {
+  position: relative;
+  padding-top: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card.hovercard .cardheader {
+  background: url("/travel/src/public/css/Profile-Background.jpg");
+  background-size: cover;
+  height: 175px;
+}
+
+.card.hovercard .avatar {
+  position: relative;
+  top: -50px;
+  margin-bottom: -50px;
+}
+
+.card.hovercard .avatar img {
+  width: 100px;
+  height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid rgba(255,255,255,0.5);
+}
+
+.card.hovercard .info {
+  padding: 4px 8px 10px;
+}
+
+.card.hovercard .info .title {
+  margin-bottom: 4px;
+  font-size: 24px;
+  line-height: 1;
+  color: #262626;
+  vertical-align: middle;
+}
+
+.card.hovercard .info .desc {
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 20px;
+  color: #737373;
+  text-overflow: ellipsis;
+}
+
+.card.hovercard .bottom {
+  padding: 0 20px;
+  margin-bottom: 17px;
+}
+
+
+/** FOR LEADER_BOARDS CSS **/
+
+#LeaderBoard-Container {
+  padding-top: 3%;
+  padding-bottom: 35%;
+}
+
+#LeaderBoard-Table-Container {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#LeaderBoard-Table {
+  border-radius: 0;
+  -webkit-box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5;
+  -moz-box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5;
+  box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5;
+}
+
+#Leader-Board-Username {
+  text-decoration: none;
+  color: gold;
+}
+
+#Leader-Board-Number {
+  text-decoration: none;
+  color: white;
+}
+
+
+/** FOOTER CSS **/
+
+.footer-basic-centered{
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font: normal 18px sans-serif;
+  padding: 45px;
+}
+
+.footer-basic-centered .footer-company-motto{
+  color:  #8d9093;
+  font-size: 24px;
+  margin: 0;
+}
+
+.footer-basic-centered .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-basic-centered .footer-links{
+  list-style: none;
+  font-weight: bold;
+  color:  #ffffff;
+  padding: 35px 0 23px;
+  margin: 0;
+}
+
+.footer-basic-centered .footer-links a{
+  display:inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+  .footer-basic-centered{
+    padding: 35px;
+  }
+
+  .footer-basic-centered .footer-company-motto{
+    font-size: 18px;
+  }
+
+  .footer-basic-centered .footer-company-name{
+    font-size: 12px;
+  }
+
+  .footer-basic-centered .footer-links{
+    font-size: 14px;
+    padding: 25px 0 20px;
+  }
+
+  .footer-basic-centered .footer-links a{
+    line-height: 1.8;
+  }
+}
+
+
+
