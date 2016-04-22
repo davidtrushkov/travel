@@ -26,5 +26,5 @@ Languages used:
 - Bootstrap/Semantic-UI
 
 Here is the link to the actual website:
-http://changvillage.com/travel/
+http://davidtrushkov.com/travel/
 
