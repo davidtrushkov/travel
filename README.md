@@ -5,7 +5,7 @@ This is a website I made for practice in Laravel 5.2. It is a website were users
 can search Travel Destinations other users put up on the website. Users can signup, 
 and create Travel Flyers.
 
-The fetaures this website has is:
+The feature this website has is:
 
 - Signup/with email verification/password reset/forgot password, and Login/Logout.
 - Create Travel Flyers (which displays in the front-end on a google map.)
